@@ -1,0 +1,40 @@
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+footer {
+    background-color: $color_bg_footer;
+    color: white;
+    padding-left: 25px;
+}
+
+.flexcenter, .flexbetween, .flexaround, .flexstart {
+    display: flex;
+    align-items: center;
+}
+.flexcenter {
+    justify-content: center;
+}
+.flexbetween {
+    justify-content: space-between;
+}
+.flexaround {
+    justify-content: space-around;
+}
+.flexstart {
+    justify-content: flex-start;
+}
+
+footera > div {
+    margin: 10px;
+}
+footer div > p {
+    margin: 10px;
+}

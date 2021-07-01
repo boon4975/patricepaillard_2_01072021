@@ -1,0 +1,54 @@
+footer div > i {
+  width: 15px;
+  height: 15px;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding-left: 25px;
+}
+
+.flexcenter, .flexbetween, .flexaround, .flexstart {
+  display: flex;
+  align-items: center;
+}
+
+.flexcenter {
+  justify-content: center;
+}
+
+.flexbetween {
+  justify-content: space-between;
+}
+
+.flexaround {
+  justify-content: space-around;
+}
+
+.flexstart {
+  justify-content: flex-start;
+}
+
+footera > div {
+  margin: 10px;
+}
+
+footer div > p {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
