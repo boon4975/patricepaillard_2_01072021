@@ -8,7 +8,7 @@ body {
   margin: auto;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -19,7 +19,7 @@ p {
 footer {
   background-color: #353535;
   color: white;
-  padding-left: 25px;
+  padding: 25px 0 40px 25px;
 }
 
 .flexcenter, .flexbetween, .flexaround, .flexstart {
@@ -43,12 +43,18 @@ footer {
   justify-content: flex-start;
 }
 
-footera > div {
-  margin: 10px;
+footer > span {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
 }
 
 footer div > p {
-  margin: 10px;
+  margin: 10px 0 10px 10px;
+}
+
+footer > a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
