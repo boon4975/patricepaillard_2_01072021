@@ -1,0 +1,25 @@
+.map {
+    background-color: $color_bg_map;
+    height: $map_height;
+    border-top: 3px solid darken($color_bg_map, 5);
+}
+.map input {
+    border: none;
+    background-color: $color_bg_map;
+    margin-left: 10px;
+    font-weight: bold;
+    height: $map_height -10;
+}
+input:focus {
+    outline: 1px solid darken($color_bg_gris, 20);
+    border-radius: 5px;
+}
+
+.presentation p {
+    color: darken($color_bg_gris,40);
+    
+}
+.presentation p, h2 {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}

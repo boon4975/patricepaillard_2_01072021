@@ -1,25 +1,15 @@
-footer div > i {
-  width: 15px;
-  height: 15px;
-}
-
 body {
   max-width: 1440px;
   margin: auto;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: "Shrikhand", cursive;
 }
 
-p {
+p, h2, h3 {
   font-family: "Roboto", sans-serif;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 25px 0 40px 25px;
 }
 
 .flexcenter, .flexbetween, .flexaround, .flexstart {
@@ -43,18 +33,88 @@ footer {
   justify-content: flex-start;
 }
 
+.flexstartbaseline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.bg_gris {
+  background-color: #f6f6f6;
+}
+
+footer > i {
+  width: 15px;
+  height: 15px;
+}
+
+.map > i {
+  width: 20px;
+  height: 20px;
+}
+
+header div {
+  padding: 15px 0 15px 0;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 15px 0 30px 25px;
+}
+
 footer > span {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
 }
 
 footer div > p {
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 0 0;
+}
+
+footer > p {
+  margin: 10px 0 0 0;
+}
+
+footer div > i {
+  margin-right: 10px;
+}
+
+footer a > p {
+  margin: 10px 0 0 0;
 }
 
 footer > a {
   color: white;
   text-decoration: none;
+}
+
+.map {
+  background-color: #e9e9e9;
+  height: 45px;
+  border-top: 3px solid #dddddd;
+}
+
+.map input {
+  border: none;
+  background-color: #e9e9e9;
+  margin-left: 10px;
+  font-weight: bold;
+  height: 45px -10;
+}
+
+input:focus {
+  outline: 1px solid #c3c3c3;
+  border-radius: 5px;
+}
+
+.presentation p {
+  color: #909090;
+}
+
+.presentation p, h2 {
+  text-align: center;
+  padding: 0 10px 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

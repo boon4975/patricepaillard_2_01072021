@@ -3,4 +3,9 @@ $color_primary: #9356DC;
 $color_secondary: #FF79DA;
 $color_tertiary: #99E2D0;
 $color_bg_footer: #353535;
-$color_bg: #f6f6f6;
+$color_bg_gris: #f6f6f6;
+$color_bg_map:  darken($color_bg_gris, 5);
+
+ 
+
+$map_height: 45px;

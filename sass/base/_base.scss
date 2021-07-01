@@ -1,20 +1,15 @@
 body {
     max-width: 1440px;
     margin: auto;
+    box-sizing: border-box;
 }
-h1, h2, h3 {
+h1 {
     font-family: 'Shrikhand', cursive;
 }
 
-p {
+p, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
-footer {
-    background-color: $color_bg_footer;
-    color: white;
-    padding: 25px 0 40px 25px;
-}
-
 .flexcenter, .flexbetween, .flexaround, .flexstart {
     display: flex;
     align-items: center;
@@ -31,15 +26,11 @@ footer {
 .flexstart {
     justify-content: flex-start;
 }
-
-footer > span {
-    font-family: 'Shrikhand', cursive;
-    font-size: 20px;
+.flexstartbaseline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
-footer div > p {
-    margin: 10px 0 10px 10px;
-}
-footer > a {
-    color: white;
-    text-decoration: none;
+.bg_gris {
+    background-color: $color_bg_gris;
 }
