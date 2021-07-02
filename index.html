@@ -13,27 +13,30 @@
 </head>
 <body>
     <header>
-        <div class="flexcenter">
-            <img src="./public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        <div class="flex flex__items--center flex__content--center">
+            <h1>ohmyfood</h1>
         </div>
-        
     </header>
+
     <section class="presentation">
-        <div class="bg_gris">
-            <div class="map flexcenter">
+        <div class="flex flex__content--center flex__items--center flex__sens--col bg_gris">
+            <div class="map flex flex__items--center flex__content--center">
                 <div><i class="fas fa-map-marker-alt"></i>
                 <input type="search" value="Paris, Belleville"></div>
             </div>
 
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <div class="boutonrose">Explorer nos restaurants</div>
+            <span class="flex flex__items--center flex__content--center btn__rose">Explorer nos restaurants</span>
         </div>
-        <div class="fontionnement">
+        <div class="fonctionnement">
             <h2>Fonctionnement</h2>
-            <div class="choix">Choisissez votre restaurant</div>
-            <div class="composez">Composez votre menu</div>
-            <div class="degustez">Dégustez au restaurant</div>
+            <div class="flex flex__content--center flex__items--center flex__sens--col">
+                <div class="choice__step bg_gris flex flex__content--start flex__items--baseline"><i class="fas fa-mobile-alt"></i><p>Choisissez votre restaurant</p></div>
+                <div class="composez"><i class="fas fa-list-ul"></i>Composez votre menu</div>
+                <div class="degustez"><i class="fas fa-store"></i>Dégustez au restaurant</div>
+            </div>
+            
         </div>
     </section>
 
@@ -42,8 +45,8 @@
     </section>
     <footer>
         <span>ohmyfood</span>
-        <div class="flexstartbaseline"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></div>
-        <div class="flexstartbaseline"><i class="fas fa-hands-helping fa-xs"></i><p>Devenir partenaire</p></div>
+        <div class="flex flex__content--start flex__items--baseline"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></div>
+        <div class="flex flex__content--start flex__items--baseline"><i class="fas fa-hands-helping fa-xs"></i><p>Devenir partenaire</p></div>
         <p>Mentions légales</p>
         <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
 

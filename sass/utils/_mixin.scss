@@ -1,6 +1,4 @@
-@mixin padding_block {
-    padding: 20px 0 20 px 0;
+@mixin btn-color-degrad {
+    background: linear-gradient(175deg, $color_secondary 40%, $color_primary);
 }
-@mixin boxshadowmap {
-    box-shadow: -5px 0 15px darken($color_bg_map, 30);
-}
+

@@ -1,0 +1,11 @@
+.btn__rose {
+    border-radius: 30px;
+    height: $btn_rose_height;
+    width: $btn_rose_height*5;
+    @include btn-color-degrad;
+    color: white;
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(175deg, rgba($color_secondary, .8) 40%, rgba($color_primary, 0.8));
+    }
+}
