@@ -1,3 +1,4 @@
+@keyframes choix {}
 body {
   max-width: 1440px;
   margin: auto;
@@ -51,11 +52,13 @@ footer > i {
   height: 50px;
   width: 250px;
   background: linear-gradient(175deg, #ff79da 40%, #9356dc);
+  box-shadow: #cecece 0 5px 10px;
   color: white;
 }
 .btn__rose:hover {
   cursor: pointer;
   background: linear-gradient(175deg, rgba(255, 121, 218, 0.8) 40%, rgba(147, 86, 220, 0.8));
+  box-shadow: #828282 0 10px 10px;
 }
 
 header div {
@@ -131,18 +134,39 @@ footer > a {
   padding-left: 25px;
 }
 
-.choice__step {
+.choix {
   height: 70px;
-  width: 350px;
-  border-radius: 30px;
+  width: 330px;
+  border-radius: 25px;
+  margin: 15px 0 15px 0;
+  box-shadow: #cecece 0 5px 10px;
 }
-.choice__step i {
-  color: #353535;
+.choix .numero {
+  width: 25px;
+  height: 25px;
+  background-color: #9356dc;
+  border-radius: 50px;
+  position: relative;
+  left: -10px;
+  color: white;
 }
-.choice__step p {
-  padding-left: 20px;
-  color: black;
-  font-weight: bolder;
+.choix .choix__icone {
+  color: #737373;
+  position: relative;
+  left: 10px;
+}
+.choix p {
+  position: relative;
+  left: 35px;
+  font-weight: bold;
+}
+.choix:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+  box-shadow: #828282 0 10px 10px;
+}
+.choix:hover > .choix__icone {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=style.css.map */

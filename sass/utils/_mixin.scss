@@ -1,4 +1,9 @@
 @mixin btn-color-degrad {
     background: linear-gradient(175deg, $color_secondary 40%, $color_primary);
 }
-
+@mixin box-shadow {
+    box-shadow: lighten($color_bg_footer, 60) 0 5px 10px;
+}
+@mixin box-shadow-plus {
+    box-shadow: lighten($color_bg_footer, 30) 0 10px 10px;
+}
