@@ -6,3 +6,28 @@ footer > i {
     width: 20px;
     height: 20px;
 }
+.icon__heart {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: -20px;
+    &--unlike {
+        position: relative;
+        top: 10px;
+        opacity: 1;
+    }
+    &--like {
+        position: relative;
+        top: -9px;
+        color: $color_secondary;
+        opacity: 0;
+    }
+    &:hover {
+        & > .icon__heart--like {
+            animation: heart-like 1s cubic-bezier(.17,.99,.66,.99) both;
+        }
+        & >.icon__heart--unlike {
+            animation: heart-unlike 1s both;
+        }
+    }
+}

@@ -1,4 +1,29 @@
-@keyframes choix {}
+@keyframes heart-like {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1);
+  }
+}
+@keyframes heart-unlike {
+  0% {
+    opacity: 0.5;
+  }
+  15% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   max-width: 1440px;
   margin: auto;
@@ -25,6 +50,9 @@ h1 {
 .flex__content--start {
   justify-content: flex-start;
 }
+.flex__content--between {
+  justify-content: space-between;
+}
 .flex__sens--col {
   flex-direction: column;
 }
@@ -45,6 +73,30 @@ footer > i {
 .map > i {
   width: 20px;
   height: 20px;
+}
+
+.icon__heart {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  top: -20px;
+}
+.icon__heart--unlike {
+  position: relative;
+  top: 10px;
+  opacity: 1;
+}
+.icon__heart--like {
+  position: relative;
+  top: -9px;
+  color: #ff79da;
+  opacity: 0;
+}
+.icon__heart:hover > .icon__heart--like {
+  animation: heart-like 1s cubic-bezier(0.17, 0.99, 0.66, 0.99) both;
+}
+.icon__heart:hover > .icon__heart--unlike {
+  animation: heart-unlike 1s both;
 }
 
 .btn__rose {
@@ -126,12 +178,13 @@ footer > a {
   margin: 30px 0 60px 0;
 }
 
-.fonctionnement {
-  margin: 50px 0 60px 0;
+.fonctionnement, .restaurants {
+  padding: 50px 0 60px 0;
 }
-.fonctionnement h2 {
+.fonctionnement h2, .restaurants h2 {
   text-align: left;
   padding-left: 25px;
+  margin: 0;
 }
 
 .choix {
@@ -167,6 +220,32 @@ footer > a {
 }
 .choix:hover > .choix__icone {
   color: #9356dc;
+}
+
+.restaurant {
+  margin: 15px 0 15px 0;
+  background: white;
+  border-radius: 30px;
+  box-shadow: #cecece 0 5px 10px;
+}
+.restaurant__boximg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 340px;
+  height: 175px;
+  border-radius: 30px 30px 0 0;
+}
+.restaurant__boximg img {
+  width: 100%;
+  height: auto;
+}
+.restaurant__info {
+  margin: 0 25px 0 15px;
+}
+.restaurant__info p {
+  color: #666666;
 }
 
 /*# sourceMappingURL=style.css.map */

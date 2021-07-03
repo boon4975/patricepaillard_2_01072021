@@ -25,6 +25,9 @@ h1 {
         &--start {
             justify-content: flex-start;
         }
+        &--between {
+            justify-content: space-between;
+        }
     } 
     &__sens {
         &--col {
