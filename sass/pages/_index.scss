@@ -1,3 +1,9 @@
+header {
+    & h1 {
+        display: none;
+    }
+    
+}
 .map {
     background-color: $color_bg_map;
     height: $map_height;
@@ -96,6 +102,7 @@
     }
     &__info {
         margin: 0 25px 0 15px;
+        line-height: 10px;
         & p {
             color: lighten(black, 40);
         }

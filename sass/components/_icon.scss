@@ -7,20 +7,22 @@ footer > i {
     height: 20px;
 }
 .icon__heart {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    top: -20px;
+    position: relative;;
+    top: -15px;
     &--unlike {
         position: relative;
-        top: 10px;
+        top: 9px;
         opacity: 1;
     }
     &--like {
         position: relative;
         top: -9px;
-        color: $color_secondary;
+        background-image: url(../../public/img/bg_heart.png);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, .1);
         opacity: 0;
+        transform-origin: bottom;
     }
     &:hover {
         & > .icon__heart--like {
