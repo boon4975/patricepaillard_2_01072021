@@ -6,6 +6,14 @@ footer > i {
     width: 20px;
     height: 20px;
 }
+header .goback {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    & a {
+        color: black;
+    }
+}
 .icon__heart {
     position: relative;;
     top: -5px;
@@ -36,4 +44,19 @@ footer > i {
             animation: heart-unlike 1s both;
         }
     }
+}
+
+.icon_checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../public/img/bg_checked.png);
+    overflow: hidden;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    right: -61px;
+    top: -19px;
+    height: 72px;
+    width: 60px;
+    color: white;
 }

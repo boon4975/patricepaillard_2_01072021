@@ -7,18 +7,77 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/644a43a817.js" crossorigin="anonymous"></script>>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/644a43a817.js" crossorigin="anonymous"></script>
     <title>ohmyfood - la palette du goût</title>
 </head>
 <body>
     <header>
         <div class="flex flex__items--center flex__content--center">
-            <h1>ohmyfood</h1>
+            <img src="./public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
+            <div class="goback"><a href="./index.html"><i class="fas fa-arrow-left"></i></a></div>
         </div>
     </header>
-    <section>
 
+    <section class="carte flex flex__content--center flex__items--center flex__sens--col">
+        <div class="carte__image">
+            <img src="./public/img/restaurants/lapalettedugout.jpg" alt="restaurant la palette du goût"></div>
+        <div class="carte__menu">
+            <div class="carte__titre flex flex__content--between flex__items--baseline">
+                <h2>la palette du goût</h2>
+                <div class="icon__heart">
+                    <div class="icon__heart--unlike flex flex__items--center"><i class="far fa-heart fa-lg"></i></div>
+                    <div class="icon__heart--like flex flex__items--center"><i class="fas fa-heart fa-lg"></i></div>
+                </div>
+            </div>
+            
+            <div class="carte__menu__choix">
+                <h3>Entrées</h3>
+                <span class="carte__menu__choix--ligne">_</span>
+                <div class="flex flex__content--between flex__items--center flex__sens--col">
+                    <div class="carte__menu__choix__plat">
+                        <div class="carte__menu__choix__plat--details">
+                            <h4>Fricassée d'escargot</h4>
+                            <p>Au piment d'espelette</p>
+                        </div>
+                        <div class="carte__menu__choix__plat--checked">
+                            <div class="prix">25€</div>
+                            <div class="icon_checked"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="carte__menu__choix__plat">
+                        <div class="carte__menu__choix__plat--details">
+                            <h4>Foie gras de canard mi-cuit</h4>
+                            <p>Et ses copeaux de truffe noire</p>
+                        </div>
+                        <div class="carte__menu__choix__plat--checked">
+                            <div class="prix">35€</div>
+                            <div class="icon_checked"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="carte__menu__choix__plat">
+                        <div class="carte__menu__choix__plat--details">
+                            <h4>Oeuf au plat</h4>
+                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <div class="carte__menu__choix__plat--checked">
+                            <div class="prix">35€</div>
+                            <div class="icon_checked"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="plats"></div>
+                <div class="desserts"></div>
+            </div>
+            <div class="btn_cmd"></div>
+        </div>
     </section>
 
     <footer>

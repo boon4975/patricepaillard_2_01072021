@@ -24,3 +24,28 @@
         opacity: 0;
     }
 }
+@keyframes check-turn {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+    
+}
+@keyframes slideleft {
+    0% {
+        width: 15%;
+    }
+    100% {
+        width: 45%;
+    }
+}
+@keyframes slideright {
+    0% {
+        width: 45%;
+    }
+    100% {
+        width: 15%;
+    }
+}

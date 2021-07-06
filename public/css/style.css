@@ -24,6 +24,34 @@
     opacity: 0;
   }
 }
+@keyframes check-turn {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes slideleft {
+  0% {
+    width: 15%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes slideright {
+  0% {
+    width: 45%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+.carte__menu__choix, .restaurant__info p {
+  font-weight: 300;
+}
+
 body {
   max-width: 1440px;
   margin: auto;
@@ -31,8 +59,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+header h1 {
   font-family: "Shrikhand", cursive;
+  margin: 0;
 }
 
 .flex {
@@ -61,10 +90,6 @@ h1 {
   background-color: #f6f6f6;
 }
 
-h1 {
-  margin: 0;
-}
-
 footer > i {
   width: 15px;
   height: 15px;
@@ -73,6 +98,15 @@ footer > i {
 .map > i {
   width: 20px;
   height: 20px;
+}
+
+header .goback {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+header .goback a {
+  color: black;
 }
 
 .icon__heart {
@@ -103,6 +137,21 @@ footer > i {
 }
 .icon__heart:hover > .icon__heart--unlike {
   animation: heart-unlike 1s both;
+}
+
+.icon_checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../public/img/bg_checked.png);
+  overflow: hidden;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  right: -61px;
+  top: -19px;
+  height: 72px;
+  width: 60px;
+  color: white;
 }
 
 .btn__rose {
@@ -153,10 +202,6 @@ footer a > p {
 footer > a {
   color: white;
   text-decoration: none;
-}
-
-header h1 {
-  display: none;
 }
 
 .map {
@@ -255,8 +300,82 @@ header h1 {
   margin: 0 25px 0 15px;
   line-height: 10px;
 }
-.restaurant__info p {
-  color: #666666;
+.carte__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 375px;
+  height: 250px;
+}
+.carte__image img {
+  width: 100%;
+  height: auto;
+}
+.carte__titre {
+  font-family: "Shrikhand", cursive;
+  padding: 30px 15px 0 15px;
+}
+.carte__menu {
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -70px;
+  width: 375px;
+  height: auto;
+}
+.carte__menu__choix h3 {
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+.carte__menu__choix--ligne {
+  display: inline-block;
+  position: relative;
+  left: 15px;
+  top: -10px;
+  width: 40px;
+  height: 1px;
+  border-bottom: 2px solid #99E2D0;
+  color: #f6f6f6;
+}
+.carte__menu__choix__plat {
+  border-radius: 20px;
+  box-shadow: #cecece 0 5px 10px;
+  background-color: white;
+  overflow: hidden;
+  width: 350px;
+  height: 70px;
+  margin: 10px 0 10px 0;
+  display: flex;
+}
+.carte__menu__choix__plat h4, .carte__menu__choix__plat p, .carte__menu__choix__plat .prix {
+  margin: 10px;
+}
+.carte__menu__choix__plat:hover > .carte__menu__choix__plat--checked {
+  animation: slideleft 500ms both;
+}
+.carte__menu__choix__plat:hover > .carte__menu__choix__plat--checked .icon_checked i {
+  animation: check-turn 500ms 150ms both;
+}
+.carte__menu__choix__plat--checked {
+  animation: slideright 300ms both;
+}
+.carte__menu__choix__plat--checked .prix {
+  width: 40px;
+  margin: 0;
+  position: relative;
+  top: 38px;
+  font-weight: bold;
+}
+.carte__menu__choix__plat--details {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.carte__menu__choix__plat--details p, .carte__menu__choix__plat--details h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=style.css.map */
