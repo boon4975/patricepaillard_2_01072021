@@ -21,6 +21,7 @@
         height: auto;
         &__choix {
             @extend %texte-gris;
+            overflow: hidden;
             & h3 {
                 padding-left: 15px;
                 text-transform: uppercase;
@@ -44,6 +45,12 @@
                 height: 70px;
                 margin: 10px 0 10px 0;
                 display: flex;
+                animation: slidetop 2000ms cubic-bezier(.5,.18,.04,.99) both;
+                @for $i from 1 through 3 {
+                    &--anim#{$i} {
+                        animation-delay : 100ms * $i;
+                    }
+                }
                 & h4, p, .prix {
                     margin: 10px;
                 }
