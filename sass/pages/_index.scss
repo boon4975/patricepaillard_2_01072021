@@ -76,7 +76,25 @@
     margin: 15px 0 15px 0;    
     background: white;
     border-radius: 30px;
+    height: 250px;
     @include box-shadow;
+    &__info {
+        position: relative;
+        top: -30px
+    }
+    &__nouveau {
+        width: 80px;
+        height: 30px;
+        position: relative;
+        top: 20px;
+        left: 240px;
+        background-color: $color_tertiary;
+        z-index: 1;
+        color: darken($color_tertiary, 50);
+        &--invisible {
+            z-index: -1;
+        }
+    }
     &__boximg {
         @include imagebox;
         width: 340px;
@@ -87,7 +105,7 @@
             height: auto;
         }
     }
-    &__info {
+    &__localisation {
         margin: 0 25px 0 15px;
         line-height: 10px;
         & p {

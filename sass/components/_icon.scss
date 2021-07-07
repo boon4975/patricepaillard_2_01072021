@@ -27,7 +27,7 @@ header .goback {
     &--like {
         position: relative;
         top: -17px;
-        background-image: url(../../public/img/bg_heart.png);
+        background-image: url(../../public/img/animation/bg_heart.png);
         background-clip: text;
         -webkit-background-clip: text;
         color: rgba(0, 0, 0, .1);
@@ -50,7 +50,7 @@ header .goback {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../public/img/bg_checked.png);
+    background-image: url(../../public/img/animation/bg_checked.png);
     overflow: hidden;
     border-radius: 0 20px 20px 0;
     position: relative;

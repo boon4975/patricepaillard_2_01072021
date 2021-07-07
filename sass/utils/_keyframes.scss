@@ -66,3 +66,32 @@
         animation-timing-function: cubic-bezier(0,.67,0,.99);
     }
 }
+@keyframes loader {
+    0% {
+        z-index: 2;
+        opacity: .5;
+    }
+    10%, 75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: .7;
+    }
+    85% {
+        opacity: .6;
+    }
+    90% {
+        opacity: 0.4;
+        z-index: 2;
+    }
+}
+@keyframes spin-fork {
+    100% {
+        transform: rotateZ(1turn);
+    }
+}
+@keyframes spin-glass {
+    100% {
+        transform: rotate(360deg);
+    }
+}
