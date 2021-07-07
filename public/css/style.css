@@ -51,27 +51,26 @@
 @keyframes slidetop {
   0% {
     opacity: 0;
-    transform: translateY(2000px);
+    transform: translateY(300px);
+    animation-timing-function: cubic-bezier(0, 0.67, 0, 0.99);
   }
   25% {
-    opacity: 0.2;
-    transform: translateY(1500px);
-  }
-  30% {
-    opacity: 0.5;
-    transform: translateY(800px);
-  }
-  55% {
     opacity: 0.8;
-    transform: translateY(800px);
+    transform: translateY(300px);
+    animation-timing-function: cubic-bezier(0, 0.67, 0, 0.99);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0.67, 0, 0.99);
   }
 }
 .carte__menu__choix, .restaurant__info p {
   font-weight: 300;
+}
+
+.btn__rose {
+  margin: 30px 0 60px 0;
 }
 
 body {
@@ -251,9 +250,6 @@ footer > a {
   padding: 0 10px 0 10px;
   margin: 10px 0 0 0;
 }
-.presentation span {
-  margin: 30px 0 60px 0;
-}
 
 .fonctionnement, .restaurants {
   padding: 50px 0 60px 0;
@@ -345,6 +341,7 @@ footer > a {
   top: -70px;
   width: 375px;
   height: auto;
+  margin-bottom: -70px;
 }
 .carte__menu__choix {
   overflow: hidden;
@@ -372,16 +369,13 @@ footer > a {
   height: 70px;
   margin: 10px 0 10px 0;
   display: flex;
-  animation: slidetop 2000ms cubic-bezier(0.5, 0.18, 0.04, 0.99) both;
+  animation: slidetop 2500ms both;
 }
 .carte__menu__choix__plat--anim1 {
   animation-delay: 100ms;
 }
 .carte__menu__choix__plat--anim2 {
   animation-delay: 200ms;
-}
-.carte__menu__choix__plat--anim3 {
-  animation-delay: 300ms;
 }
 .carte__menu__choix__plat h4, .carte__menu__choix__plat p, .carte__menu__choix__plat .prix {
   margin: 10px;

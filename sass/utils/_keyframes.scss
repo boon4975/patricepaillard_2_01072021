@@ -52,22 +52,17 @@
 @keyframes slidetop {
     0% {
         opacity: 0;
-        transform: translateY(2000px);
+        transform: translateY(300px);
+        animation-timing-function: cubic-bezier(0,.67,0,.99);
     }
     25% {
-        opacity: .2;
-        transform: translateY(1500px);
-    }
-    30% {
-        opacity: .5;
-        transform: translateY(800px);
-    }
-    55% {
         opacity: .8;
-        transform: translateY(800px);
+        transform: translateY(300px);
+        animation-timing-function: cubic-bezier(0,.67,0,.99);
     }
     100% {
         opacity: 1;
         transform: translateY(0);
+        animation-timing-function: cubic-bezier(0,.67,0,.99);
     }
 }

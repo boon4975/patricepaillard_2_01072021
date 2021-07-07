@@ -5,6 +5,7 @@
     @include btn-color-degrad;
     @include box-shadow;
     color: white;
+    @extend %margin-btn-rose;
     &:hover {
         cursor: pointer;
         background: linear-gradient(175deg, rgba($color_secondary, .8) 40%, rgba($color_primary, 0.8));
