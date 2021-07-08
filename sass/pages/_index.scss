@@ -1,22 +1,25 @@
-.map {
-    background-color: $color_bg_map;
-    height: $map_height;
-    width: 100%;
-    border-top: 3px solid darken($color_bg_map, 5);
-    & input {
-        border: none;
-        background-color: $color_bg_map;
-        margin-left: 10px;
-        font-weight: bold;
-        &:focus {
-            outline: 1px solid darken($color_bg_gris, 20);
-            border-radius: 5px;
-        }
-    }
-    
-}
-
 .presentation {
+    @include flex_center;
+    @include align_center;
+    @include flex_sens_col;
+    &__map {
+        @include flex_center;
+        @include align_center;
+        background-color: $color_bg_map;
+        height: $map_height;
+        width: 100%;
+        border-top: 3px solid darken($color_bg_map, 5);
+        & input {
+            border: none;
+            background-color: $color_bg_map;
+            margin-left: 10px;
+            font-weight: bold;
+            &:focus {
+                outline: 1px solid darken($color_bg_gris, 20);
+                border-radius: 5px;
+            }
+        } 
+    }
     & p {
         color: darken($color_bg_gris,40);
     }
@@ -35,42 +38,60 @@
         margin: 0;
     }
 }
-
-.choix {
-    height: $choix-height;
-    width: $choix-width;
-    border-radius: 25px;
-    margin: 15px 0 15px 0;
-    @include box-shadow;
-    & .numero {
-        width: 25px;
-        height: 25px;
-        background-color: $color_primary;
-        border-radius: 50px;
-        position: relative;
-        left: -10px;
-        color: white;
+.fonctionnement {
+    &--flex {
+        @include flex_center;
+        @include align_center;
+        @include flex_sens_col;
     }
-    & .choix__icone {
-        color: lighten(black, 45);
-        position: relative;
-        left: 10px;
-    }
-    & p {
-        position: relative;
-        left: 35px;
-        font-weight: bold;
-    }
-    &:hover {
-        background-color: lighten($color_primary, 35);
-        cursor: pointer;
-        @include box-shadow-plus;
-        & > .choix__icone {
-            color: $color_primary;
+    &__choix {
+        @include flex-start;
+        @include align_center;
+        height: $choix-height;
+        width: $choix-width;
+        border-radius: 25px;
+        margin: 15px 0 15px 0;
+        @include box-shadow;
+        &__numero {
+            @include flex_center;
+            @include align_center;
+            width: 25px;
+            height: 25px;
+            background-color: $color_primary;
+            border-radius: 50px;
+            position: relative;
+            left: -10px;
+            color: white;
         }
+        &__icone {
+            color: lighten(black, 45);
+            position: relative;
+            left: 10px;
+        }
+        & p {
+            position: relative;
+            left: 35px;
+            font-weight: bold;
+        }
+        &:hover {
+            background-color: lighten($color_primary, 35);
+            cursor: pointer;
+            @include box-shadow-plus;
+            & > .fonctionnement__choix__icone {
+                color: $color_primary;
+            }
+        }
+        
     }
-    
 }
+.restaurants {
+    &--flex {
+        @include flex_center;
+        @include align_center;
+        @include flex_sens_col;;
+    }
+}
+
 
 .restaurant {
     margin: 15px 0 15px 0;    
@@ -83,6 +104,8 @@
         top: -30px
     }
     &__nouveau {
+        @include flex_center;
+        @include align_center;
         width: 80px;
         height: 30px;
         position: relative;
@@ -106,6 +129,8 @@
         }
     }
     &__localisation {
+        @include flex_between;
+        @include align_center;
         margin: 0 25px 0 15px;
         line-height: 10px;
         & p {

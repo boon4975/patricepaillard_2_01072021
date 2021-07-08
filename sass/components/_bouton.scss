@@ -1,4 +1,6 @@
 .btn__rose {
+    @include flex_center;
+    @include align_center;
     border-radius: 30px;
     height: $btn_rose_height;
     width: $btn_rose_height*5;

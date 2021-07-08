@@ -1,23 +1,8 @@
-footer > i {
-    width: 15px;
-    height: 15px;
-}
-.map > i {
-    width: 20px;
-    height: 20px;
-}
-header .goback {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    & a {
-        color: black;
-    }
-}
-.icon__heart {
+.icon_heart {
     position: relative;;
     top: -5px;
     &--unlike {
+        @include flex_heart;
         position: relative;
         top: 9px;
         opacity: 1;
@@ -25,6 +10,7 @@ header .goback {
         width: 26px;
     }
     &--like {
+        @include flex_heart;
         position: relative;
         top: -17px;
         background-image: url(../../public/img/animation/bg_heart.png);
@@ -37,10 +23,10 @@ header .goback {
         width: 26px;
     }
     &:hover {
-        & > .icon__heart--like {
+        & > .icon_heart--like {
             animation: heart-like 1s cubic-bezier(.17,.99,.66,.99) both;
         }
-        & >.icon__heart--unlike {
+        & >.icon_heart--unlike {
             animation: heart-unlike 1s both;
         }
     }

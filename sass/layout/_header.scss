@@ -1,3 +1,19 @@
-header div {
-    padding: 15px 0 15px 0;
+header {
+    & div {
+        @include flex_center;
+        @include align_center;
+        padding: 15px 0 15px 0;
+    }
+    & .goback {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        & a {
+            color: black;
+        }
+    }
+    & h1 {
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+    }
 }

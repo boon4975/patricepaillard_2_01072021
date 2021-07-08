@@ -2,24 +2,29 @@ footer {
     background-color: $color_bg_footer;
     color: white;
     padding: 15px 0 30px 25px;
+    & .footer--flex {
+        @include flex-start;
+        @include align-baseline;
+        & > p {
+            margin: 10px 0 0 0;
+        }
+        & > i {
+            margin-right: 10px;
+        }
+    }
+    & > span {
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;     
+    }
+    & > p {
+        margin: 10px 0 0 0;
+    }
+    & > a {
+       color: white;
+        text-decoration: none; 
+        & > p {
+            margin: 10px 0 0 0;
+        }
+    }
 }
-footer > span {
-    font-family: 'Shrikhand', cursive;
-    font-size: 20px;
-}
-footer div > p {
-    margin: 10px 0 0 0;
-}
-footer > p {
-    margin: 10px 0 0 0;
-}
-footer div > i {
-    margin-right: 10px;
-}
-footer a > p {
-    margin: 10px 0 0 0;
-}
-footer > a {
-    color: white;
-    text-decoration: none;
-}
+
