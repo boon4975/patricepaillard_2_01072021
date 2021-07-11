@@ -34,18 +34,18 @@
 }
 @keyframes slideleft {
   0% {
-    width: 15%;
+    width: 30vw;
   }
   100% {
-    width: 45%;
+    width: 50vw;
   }
 }
 @keyframes slideright {
   0% {
-    width: 45%;
+    width: 50vw;
   }
   100% {
-    width: 15%;
+    width: 15vw;
   }
 }
 @keyframes slidetop {
@@ -69,17 +69,18 @@
   0% {
     z-index: 2;
     opacity: 0.5;
+    cursor: wait;
   }
-  10%, 75% {
+  10%, 80% {
     opacity: 1;
   }
-  80% {
+  85% {
     opacity: 0.7;
   }
-  85% {
+  90% {
     opacity: 0.6;
   }
-  90% {
+  95% {
     opacity: 0.4;
     z-index: 2;
   }
@@ -103,13 +104,23 @@
 }
 
 body {
+  max-width: 100vw;
   margin: auto;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 1920px;
+  }
+}
 
 .bg_gris {
   background-color: #f6f6f6;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
 }
 
 .icon_heart {
@@ -185,7 +196,6 @@ body {
 .loader__box {
   width: 100%;
   height: 100%;
-  cursor: wait;
   position: absolute;
   /*background-color: white;*/
   background: linear-gradient(175deg, #ff79da 40%, #9356dc);
@@ -204,7 +214,7 @@ body {
   width: 250px;
   height: 250px;
   position: absolute;
-  top: 20%;
+  top: 10vh;
   background-image: url(../../public/img/animation/plate.png);
 }
 
@@ -239,9 +249,8 @@ header div {
   padding: 15px 0 15px 0;
 }
 header .goback {
-  position: absolute;
-  top: 10px;
-  left: 20px;
+  position: relative;
+  left: -50px;
 }
 header .goback a {
   color: black;
@@ -324,6 +333,17 @@ footer > a > p {
   padding-left: 25px;
   margin: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .fonctionnement h2, .restaurants h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement h2, .restaurants h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 
 .fonctionnement--flex {
   display: flex;
@@ -331,15 +351,42 @@ footer > a > p {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .fonctionnement--flex {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement--flex {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
 .fonctionnement__choix {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 70px;
-  width: 330px;
+  width: 88vw;
+  max-width: 330px;
   border-radius: 25px;
-  margin: 15px 0 15px 0;
+  margin: 15px 1px 15px 1px;
   box-shadow: #cecece 0 5px 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .fonctionnement__choix {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement__choix {
+    margin: 15px;
+  }
 }
 .fonctionnement__choix__numero {
   display: flex;
@@ -378,6 +425,20 @@ footer > a > p {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants--flex {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants--flex {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .restaurant {
   margin: 15px 0 15px 0;
@@ -385,6 +446,11 @@ footer > a > p {
   border-radius: 30px;
   height: 250px;
   box-shadow: #cecece 0 5px 10px;
+}
+@media screen and (min-width: 992px) {
+  .restaurant {
+    margin: 15px;
+  }
 }
 .restaurant__info {
   position: relative;
@@ -398,7 +464,7 @@ footer > a > p {
   height: 30px;
   position: relative;
   top: 20px;
-  left: 240px;
+  left: 220px;
   background-color: #99E2D0;
   z-index: 1;
   color: #1b6150;
@@ -411,7 +477,8 @@ footer > a > p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 340px;
+  width: 98vw;
+  max-width: 340px;
   height: 175px;
   border-radius: 30px 30px 0 0;
 }
@@ -437,26 +504,43 @@ footer > a > p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 375px;
-  height: 250px;
+  max-width: 100vw;
+  height: 66.6666666667vw;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .carte__image {
+    height: 33.3333333333vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carte__image {
+    max-height: 22.2222222222vw;
+  }
 }
 .carte__image img {
   width: 100%;
   height: auto;
 }
 .carte__titre {
-  font-family: "Shrikhand", cursive;
   padding: 15px 15px 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+@media screen and (min-width: 992px) {
+  .carte__titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .carte__menu {
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
   position: relative;
   top: -30px;
-  width: 375px;
+  width: 100%;
   height: auto;
   margin-bottom: -30px;
 }
@@ -466,8 +550,35 @@ footer > a > p {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .carte__menu--flex {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carte__menu--flex {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
 .carte__menu__choix {
   overflow: hidden;
+  width: 98%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .carte__menu__choix {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carte__menu__choix {
+    width: auto;
+  }
 }
 .carte__menu__choix--flex {
   display: flex;
@@ -492,7 +603,8 @@ footer > a > p {
   box-shadow: #cecece 0 5px 10px;
   background-color: white;
   overflow: hidden;
-  width: 350px;
+  width: 98%;
+  max-width: 350px;
   height: 70px;
   margin: 10px 0 10px 0;
   display: flex;
@@ -527,7 +639,8 @@ footer > a > p {
   font-weight: bold;
 }
 .carte__menu__choix__plat--details {
-  width: 300px;
+  width: 96vw;
+  max-width: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -535,6 +648,12 @@ footer > a > p {
 .carte__menu__choix__plat--details p, .carte__menu__choix__plat--details h4 {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.commander {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

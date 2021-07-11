@@ -8,8 +8,19 @@ $color_bg_map:  darken($color_bg_gris, 5);
 
 // taille Bouton sur fond Rose // 
 $btn_rose_height: 50px;
-//  taille de la zone de recherche //
+
+// INDEX - taille de la zone de recherche //
 $map_height: 45px;
-// taille bouton fonctionnement //
+
+// INDEX -  taille bouton fonctionnement //
 $choix-height: 70px;
-$choix-width: 330px;
+$choix-width: 88vw;
+$choix-max-width: 330px;
+
+// INDEX - photo Restaurants //
+$boximg-width: 98vw;
+$boximg-max-width: 340px;
+
+// RESTAURANTS - largeur page //
+$restaurant-width: 100vw;
+$restaurant-plat-detail-width: 96vw;

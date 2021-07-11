@@ -4,35 +4,64 @@
     @include flex_sens_col;
     &__image {
         @include imagebox;
-        width: 375px;
-        height: 250px;
+        max-width: $restaurant-width;
+        height: $restaurant-width / 1.5;
+        @include media-tablet {
+            height: $restaurant-width / 3;
+        }
+        @include media-desktop {
+            max-height: $restaurant-width / 4.5;
+        }
         & img {
             width: 100%;
             height: auto;
         }
     }
     &__titre {
-        font-family: 'Shrikhand', cursive;
         padding: 15px 15px 0 15px;
         @include flex_between;
         @include align-baseline;
+        @include media-desktop {
+            @include flex_center;
+            @include align_center;
+            @include flex_sens_col;
+        }
     }
     &__menu {
         background-color: $color_bg_gris;
         border-radius: 30px 30px 0 0;
         position: relative;
         top: -30px;
-        width: 375px;
+        width: 100%;
         height: auto;
         margin-bottom: -30px;
         &--flex {
             @include flex_between;
             @include align_center;
-            @include flex_sens_col;            
+            @include flex_sens_col;
+            @include media-tablet {
+                justify-content: space-evenly;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+            @include media-desktop {
+                justify-content: space-around;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start; 
+            }            
         }
         &__choix {
             @extend %texte-gris;
             overflow: hidden;
+            width: 98%;
+            @include media-tablet {
+                width: auto;
+            }
+            @include media-desktop {
+                width: auto;
+            }
             &--flex {
                 @include flex_center;
                 @include align_center;
@@ -55,7 +84,8 @@
                 @include box-shadow;
                 background-color: white;
                 overflow: hidden;
-                width: 350px;
+                width: 98%;
+                max-width: 350px;
                 height: 70px;
                 margin: 10px 0 10px 0;
                 display: flex;
@@ -85,7 +115,8 @@
                     }
                 }
                 &--details {
-                    width: 300px;
+                    width: $restaurant-plat-detail-width;
+                    max-width: 300px;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
@@ -97,4 +128,8 @@
             }
         }
     }
+}
+.commander {
+    width: 100%;
+    @include flex_center;
 }

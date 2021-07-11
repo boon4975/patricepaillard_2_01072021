@@ -52,3 +52,15 @@
     display: flex;
     align-items: center;
 }
+
+// media queries :  site en mobil first //
+@mixin media-tablet {
+    @media screen AND (min-width: 768px) AND (max-width: 991px) {
+        &{ @content;}
+    }
+}
+@mixin media-desktop {
+    @media screen AND (min-width: 992px) {
+        &{ @content;}
+    }
+}

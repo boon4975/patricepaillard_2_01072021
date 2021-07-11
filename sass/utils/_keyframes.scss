@@ -38,18 +38,18 @@
 }
 @keyframes slideleft {
     0% {
-        width: 15%;
+        width: 30vw;
     }
     100% {
-        width: 45%;
+        width: 50vw;
     }
 }
 @keyframes slideright {
     0% {
-        width: 45%;
+        width: 50vw;
     }
     100% {
-        width: 15%;
+        width: 15vw;
     }
 }
 // animation des plats //
@@ -75,17 +75,18 @@
     0% {
         z-index: 2;
         opacity: .5;
+        cursor: wait;
     }
-    10%, 75% {
+    10%, 80% {
         opacity: 1;
     }
-    80% {
+    85% {
         opacity: .7;
     }
-    85% {
+    90% {
         opacity: .6;
     }
-    90% {
+    95% {
         opacity: 0.4;
         z-index: 2;
     }
