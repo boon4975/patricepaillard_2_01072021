@@ -32,7 +32,7 @@
     right: -3px;
     transform-origin: bottom right;
     transform: rotate(22deg);
-    animation: spin-fork 3200ms steps(120);
+    animation: spin-element 3200ms steps(120);
 }
 .glass {
     background-image: url(../../public/img/animation/glass.png);
@@ -43,5 +43,5 @@
     right: -7px;
     transform-origin: bottom left;
     transform: rotate(-34deg);
-    animation: spin-glass 2200ms steps(100) alternate 2;
+    animation: spin-element 2200ms steps(100) alternate 2;
 }

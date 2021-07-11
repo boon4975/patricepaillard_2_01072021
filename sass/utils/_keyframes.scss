@@ -92,13 +92,8 @@
         z-index: 2;
     }
 }
-@keyframes spin-fork {
+@keyframes spin-element {
     100% {
-        transform: rotateZ(1turn);
-    }
-}
-@keyframes spin-glass {
-    100% {
-        transform: rotate(360deg);
+        transform: rotate(1turn);
     }
 }

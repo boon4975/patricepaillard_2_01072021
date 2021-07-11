@@ -24,14 +24,6 @@
     opacity: 0;
   }
 }
-@keyframes restaurant-hover {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 @keyframes check-turn {
   0% {
     transform: rotate(0turn);
@@ -93,14 +85,9 @@
     z-index: 2;
   }
 }
-@keyframes spin-fork {
+@keyframes spin-element {
   100% {
-    transform: rotateZ(1turn);
-  }
-}
-@keyframes spin-glass {
-  100% {
-    transform: rotate(360deg);
+    transform: rotate(1turn);
   }
 }
 .carte__menu__choix, .restaurant__localisation p {
@@ -235,7 +222,7 @@ h1 {
   right: -3px;
   transform-origin: bottom right;
   transform: rotate(22deg);
-  animation: spin-fork 3200ms steps(120);
+  animation: spin-element 3200ms steps(120);
 }
 
 .glass {
@@ -247,7 +234,7 @@ h1 {
   right: -7px;
   transform-origin: bottom left;
   transform: rotate(-34deg);
-  animation: spin-glass 2200ms steps(100) alternate 2;
+  animation: spin-element 2200ms steps(100) alternate 2;
 }
 
 header div {
