@@ -135,6 +135,12 @@
     border-radius: 30px;
     height: 250px;
     @include box-shadow;
+    &:hover {
+        @include box-shadow-plus;
+        color: $color_primary;
+        background-color: lighten($color_primary, 35);
+        transform: scale(1.05);
+    }
     @include media-desktop {
         margin: 15px;
     }
