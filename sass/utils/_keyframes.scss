@@ -97,3 +97,11 @@
         transform: rotate(1turn);
     }
 }
+@keyframes resto {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}

@@ -139,7 +139,7 @@
         @include box-shadow-plus;
         color: $color_primary;
         background-color: lighten($color_primary, 35);
-        transform: scale(1.05);
+        animation: resto ease-in 200ms both;
     }
     @include media-desktop {
         margin: 15px;

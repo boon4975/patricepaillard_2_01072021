@@ -90,6 +90,14 @@
     transform: rotate(1turn);
   }
 }
+@keyframes resto {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
 .carte__menu__choix, .restaurant__localisation p {
   font-weight: 300;
 }
@@ -446,7 +454,7 @@ footer > a > p {
   box-shadow: #828282 0 10px 10px;
   color: #9356dc;
   background-color: #f2eafb;
-  transform: scale(1.05);
+  animation: resto ease-in 200ms both;
 }
 @media screen and (min-width: 992px) {
   .restaurant {
